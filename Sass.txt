@@ -1,0 +1,66 @@
+1. SASS (Syntactically awesome sytax sheets) add variables to a CSS sheet. They are declared and set to
+store data, similar to JavaScript.
+
+2. These variables are used with the bling sign:
+
+Here are a couple examples:
+
+$main-fonts: Arial, sans-serif;
+$headings-color: green;
+And to use the variables:
+
+h1 {
+  font-family: $main-fonts;
+  color: $headings-color;
+}
+
+3. Sass allows nesting of CSS rules to organize a style sheet.
+
+4. A mixin is a group of CSS declarations that can be reused in the style sheet.
+
+5. The following code creates a mixin with a parameter named radius. It then calls this mixin 
+and sets the paramater value to 15x:
+
+<style type='text/scss'>
+  @mixin border-radius($radius){
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+    border-radius: $radius;
+  }
+
+  #awesome {
+    width: 150px;
+    height: 150px;
+    background-color: green;
+    @include border-radius(15px);
+  }
+</style>
+
+<div id="awesome"></div>
+
+6. Sass has if statements which work just like JS.
+
+7. Sass also has for loops similar to JS.
+
+<style type='text/scss'>
+
+@for $i from 1 through 6 {
+  .text-#{$i} { font-size: 15px * $i; }
+}
+
+</style>
+
+8. Sass contains maps that can be looped through
+$colors: (color1: blue, color2: black, color3: red);
+
+@each $key, $color in $colors {
+  .#{$color}-bg {background-color: $color;}
+}
+
+9. Sass supports imports, they should not include underscores or the .scss file type
+
+<!-- The main.scss file -->
+@import 'variables'
+
+10. Sass can extend another declaration like in Java (:
