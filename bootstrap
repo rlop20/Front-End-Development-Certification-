@@ -1,0 +1,9 @@
+1. Used bootstrap to center and make the content responsive
+2. Used bootstrap buttons instead of basic HTML buttons  
+3. Used bootstraps responsive 12-column grid system. An example of this is using 'col-xs-*' where 'xs' means to use a 
+small row and '*' is replaced with 4 because this means we want the grid to be 4 wide.
+
+4. Used bootstrap CSS instead of conventional CSS such as 'text-primary' and 'img-responsive' bootstrap classes.
+5. Used 'span' to put several elements on the same line. 
+6. Used Bootstraps icon and vector library to add custom i tag icons. 
+7. ensured all contianers and elements were responsive by utilizing "container-fluid" bootstrap class. 
